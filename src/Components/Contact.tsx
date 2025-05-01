@@ -38,7 +38,7 @@ const Contact = () => {
           </div>
         </Scroll_and_reveal>
         <Scroll_and_reveal direction="right">
-          <div className="flex flex-wrap items-center gap-4 mt-10">
+          <div className="flex flex-wrap items-center gap-4 ">
             <h4 className="select-none text-lg sm:text-xl md:text-2xl text-zinc-300">
               Are you minding a project?
             </h4>
@@ -74,7 +74,7 @@ const Contact = () => {
 
 const AnimatedButton = ({ label, width }: { label: string; width: string }) => (
   <motion.button
-    className={`h-12 ${width} text-center rounded-full border mb-10 border-zinc-600 overflow-hidden text-zinc-50 relative`}
+    className={`h-12 ${width} text-center rounded-full border  border-zinc-600 overflow-hidden text-zinc-50 relative`}
     whileHover="hover"
   >
     <motion.div

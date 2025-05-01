@@ -8,7 +8,7 @@ import Scroll_and_reveal from "./Scroll_and_reveal";
 
 const Projects = () => {
   return (
-    <div className="px-6 py-10 md:px-10 lg:px-20 w-full bg-zinc-950 overflow-hidden">
+    <div className="select-none px-6 py-10 md:px-10 lg:px-20 w-full bg-zinc-950 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <Scroll_and_reveal direction="up">
           <h1 className="text-zinc-300 text-center font-extrabold underline underline-offset-8 decoration-zinc-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
