@@ -51,9 +51,9 @@ const Contact = () => {
         <hr className="bg-zinc-300" />
       </Scroll_and_reveal>
 
-      <div className="select-none px-6 sm:px-8 md:px-10 lg:px-20">
+      <div className="select-none px-6 sm:px-8 md:px-10 lg:px-20 mb-10">
         <Scroll_and_reveal direction="left">
-          <ul className="flex flex-wrap gap-4 text-zinc-300 ">
+          <ul className="flex flex-wrap gap-4 text-zinc-300 pt-10">
             {socialLinks.map((link) => (
               <li
                 key={link.name}
