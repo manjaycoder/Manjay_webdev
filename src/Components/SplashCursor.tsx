@@ -8,6 +8,13 @@ interface ColorRGB {
 }
 
 interface SplashCursorProps {
+  size?: number; 
+  blendMode: 'normal' | 'multiply' | 'screen' | 'overlay' | 'difference';
+  splashDuration: number;
+  clickAnimationDuration: number;
+  zIndex: number;
+  splashColor: string;
+  cursorColor: string;
   SIM_RESOLUTION?: number;
   DYE_RESOLUTION?: number;
   CAPTURE_RESOLUTION?: number;

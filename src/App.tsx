@@ -1,22 +1,13 @@
-import Navbar from "./Components/Navber"; // Fixed typo from "Navber" to "Navbar"
+import Navbar from "./Components/Navber";
 import About from "./Components/About";
 import Header from "./Components/Header";
-import Marquee from "./Components/Marque"; // Fixed typo from "Marque" to "Marquee"
+import Marquee from "./Components/Marque";
 import Skill from "./Components/Skill";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import SplashCursor from "./Components/SplashCursor";
 import SmoothScroll from "./Components/SmoothScroll";
 
-interface SplashCursorProps {
-  size?: number;
-  splashColor?: string;
-  cursorColor?: string;
-  blendMode?: 'normal' | 'multiply' | 'screen' | 'overlay' | 'difference';
-  splashDuration?: number;
-  clickAnimationDuration?: number;
-  zIndex?: number;
-}
 
 const App = () => {
   return (
@@ -32,10 +23,9 @@ const App = () => {
           zIndex={9999}
         />
         <Header />
-        <Navbar /> {/* Fixed component name to match import */}
-
+        <Navbar />
         <About />
-        <Marquee /> {/* Fixed component name to match import */}
+        <Marquee />
         <Skill />
         <Projects />
         <Contact />

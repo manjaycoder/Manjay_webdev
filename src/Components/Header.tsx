@@ -44,7 +44,7 @@ const Header = () => {
                 },
               }}
             >
-              Say hey👋 Say hey👋 Say hey👋 &nbsp;
+              Say hey👋 Say hey👋 Say hey👋 &nbsp;Say hey👋 Say hey👋 Say hey👋 &nbsp;
             </motion.div>
           </motion.button>
         </div>

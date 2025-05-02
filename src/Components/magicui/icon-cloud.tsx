@@ -2,10 +2,12 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { renderToString } from "react-dom/server";
-interface Rotation {
+
+interface RotationState {
   x: number;
   y: number;
 }
+
 interface Icon {
   x: number;
   y: number;
@@ -18,6 +20,9 @@ interface Icon {
 interface IconCloudProps {
   icons?: React.ReactNode[];
   images?: string[];
+  rotationSpeed?: number;
+  initialRotation?: RotationState;
+  children?: React.ReactNode;
 }
 
 function easeOutCubic(t: number): number {
@@ -27,15 +32,18 @@ function easeOutCubic(t: number): number {
 export function IconCloud({ icons, images }: IconCloudProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [iconPositions, setIconPositions] = useState<Icon[]>([]);
-  const [rotation, setRotation] = useState<Rotation>({ x: 0, y: 0 });
-  const handleRotationChange = (newX: number, newY: number) => {
-    setRotation({ x: newX, y: newY });
-  };
+  
 
+ 
 
-  const [isDragging, setIsDragging] = useState(false);
-  const [lastMousePos, setLastMousePos] = useState({ x: 0, y: 0 });
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const rotation = { x: 0, y: 0 };
+
+  const [isDragging, setIsDragging] = useState<boolean>(false);
+  
+  const [lastMousePos, setLastMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  
+  const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  
   const [targetRotation, setTargetRotation] = useState<{
     x: number;
     y: number;
@@ -45,9 +53,13 @@ export function IconCloud({ icons, images }: IconCloudProps) {
     startTime: number;
     duration: number;
   } | null>(null);
-  const animationFrameRef = useRef<number|undefined>();
-  const rotationRef = useRef(rotation);
+  
+  const animationFrameRef = useRef<number | null>(null);
+  
+  const rotationRef = useRef<{ x: number; y: number }>(rotation);
+  
   const iconCanvasesRef = useRef<HTMLCanvasElement[]>([]);
+  
   const imagesLoadedRef = useRef<boolean[]>([]);
 
   // Create icon canvases once when icons/images change

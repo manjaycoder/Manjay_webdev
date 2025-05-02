@@ -53,7 +53,7 @@ const Contact = () => {
 
       <div className="select-none px-6 sm:px-8 md:px-10 lg:px-20">
         <Scroll_and_reveal direction="left">
-          <ul className="flex flex-wrap gap-4 text-zinc-300 pt-10">
+          <ul className="flex flex-wrap gap-4 text-zinc-300 ">
             {socialLinks.map((link) => (
               <li
                 key={link.name}

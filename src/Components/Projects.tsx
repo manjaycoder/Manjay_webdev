@@ -1,10 +1,13 @@
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import digit from "../Asset/digital.png";
-import flag from "../Asset/flag.png";
-import fitness from "../Asset/fitness.png";
-import city from "../Asset/city.png";
+
+import digit  from "../Assets/digital.png";
+import flag from "../Assets/flag.png";
+import fitness from "../Assets/fitness.png";
+import city from "../Assets/city.png";
 import Scroll_and_reveal from "./Scroll_and_reveal";
+
+
 
 const Projects = () => {
   return (
