@@ -46,7 +46,7 @@ const About = () => {
         {/* Left Text Section */}
         <Scroll_and_reveal direction="left">
           <div className="flex-1 text-center lg:text-left">
-            <p className="select-none text-zinc-300 text-base sm:text-xl lg:text-2xl font-mono mb-6">
+            <p draggable="false" className="select-none text-zinc-300 text-base sm:text-xl lg:text-2xl font-mono mb-6">
             Hi, I’m <strong>Manjay</strong>! I'm a full-stack developer with 3 years of hands-on experience in web development. Over the past 2 years, I’ve specialized in building fast, scalable, and accessible websites using modern frameworks like React/Nextjs, Figma, and jira.
             </p>
             <p className="select-none text-zinc-300 text-base sm:text-xl lg:text-2xl font-mono">
@@ -61,7 +61,7 @@ const About = () => {
           <Scroll_and_reveal direction="right">
             <img
               src="https://avatars.githubusercontent.com/u/161963231?v=4"
-              alt="Rony"
+              alt="Rony" draggable="false"
               className="rounded-full h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48 lg:h-60 lg:w-60 xl:h-72 xl:w-72 object-cover shadow-md"
             />
           </Scroll_and_reveal>

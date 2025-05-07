@@ -25,14 +25,14 @@ const Projects = () => {
             <div className="mt-16 flex flex-col lg:flex-row items-center gap-10 w-full">
               <div className="w-full lg:w-1/2 overflow-hidden rounded-lg shadow-lg group">
                 <img
-                  src={digit}
+                  src={digit} draggable="false"
                   alt="Movie Application"
                   className="object-cover w-full h-auto max-h-[400px] transition-transform duration-700 ease-in-out group-hover:scale-110"
                 />
               </div>
               <div className="w-full lg:w-1/2 flex flex-col justify-between text-center lg:text-left">
                 <h2 className="text-zinc-100 font-bold text-2xl sm:text-3xl md:text-4xl">
-                  Movie_Application
+                  Digital_Market
                 </h2>
                 <p className="text-zinc-300 mt-4 text-base sm:text-lg md:text-xl">
                   Built this website with workout plans using HTML, SCSS, and GSAP animations. Added smooth transitions inspired by Awwwards.com; optimized for mobile responsiveness. Deployed on Vercel with 90%+ Lighthouse score.
@@ -68,7 +68,7 @@ const Projects = () => {
               </div>
               <div className="w-full lg:w-1/2 overflow-hidden rounded-lg shadow-lg group">
                 <img
-                  src={flag}
+                  src={flag} draggable="false"
                   alt="Obys Agency"
                   className="object-cover w-full h-auto max-h-[400px] transition-transform duration-700 ease-in-out group-hover:scale-110"
                 />
@@ -84,6 +84,7 @@ const Projects = () => {
               <div className="w-full lg:w-1/2 overflow-hidden rounded-lg shadow-lg group">
                 <img
                   src={city}
+                  draggable="false"
                   alt="ExoApe"
                   className="object-cover w-full h-auto max-h-[400px] transition-transform duration-700 ease-in-out group-hover:scale-110"
                 />
@@ -123,7 +124,8 @@ const Projects = () => {
                 </div>
               </div>
               <div className="w-full lg:w-1/2 overflow-hidden rounded-lg shadow-lg group">
-                <img
+                <img draggable="false"
+
                   src={fitness}
                   alt="MyGym"
                   className="object-cover w-full h-auto max-h-[400px] transition-transform duration-700 ease-in-out group-hover:scale-110"

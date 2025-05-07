@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import Scroll_and_reveal from "./Scroll_and_reveal";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   const socialLinks = [
-    { name: "GITHUB", icon: <FiGithub />, url: "https://github.com" },
-    { name: "LINKEDIN", icon: <FiLinkedin />, url: "https://linkedin.com" },
-    { name: "INSTAGRAM", icon: <FiInstagram />, url: "https://instagram.com" }
+    { name: "GITHUB", icon: <FiGithub />, url: "https://github.com/manjaycoder" },
+    { name: "LINKEDIN", icon: <FiLinkedin />, url: "www.linkedin.com/in/manjay-verma" },
+    { name: "INSTAGRAM", icon: <FiInstagram />, url: "https://instagram.com/code_with_manjay" },
+    {
+      name:"TWITTER",icon: <FaXTwitter />,
+      url:"https://x.com/CoderVerma"
+    }
   ];
 
   return (

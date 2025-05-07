@@ -9,7 +9,7 @@ const Header = () => {
       h-[50%] sm:h-[50%] md:h-[20%] xl:h-[60%]"
     >
       <Scroll_and_reveal direction="left">
-        <h1 className="mt-0 lg:mt-10 xl:mt-10 2xl:mt-10 select-none text-2xl pt-[6rem] xl:pt-[10rem] lg:pt-[9rem] md:pt-[9rem] sm:pt-[9rem] sm:text-3xl md:text-4xl lg:text-[4rem] xl:text-[4.5rem] font-bold">
+        <h1 draggable='false' className="mt-0 lg:mt-10 xl:mt-10 2xl:mt-10 select-none text-2xl pt-[6rem] xl:pt-[10rem] lg:pt-[9rem] md:pt-[9rem] sm:pt-[9rem] sm:text-3xl md:text-4xl lg:text-[4rem] xl:text-[4.5rem] font-bold">
           Manjay{" "}
           <span className="select-none text-2xl sm:text-3xl pb-2 md:text-4xl lg:text-[4rem] xl:text-[4.5rem] text-zinc-400">
             Verma

@@ -20,7 +20,7 @@ const Marque = () => {
   return (
     <>
       <Scroll_and_reveal direction="left">
-        <section className="relative w-full max-w-screen overflow-x-hidden border-y border-zinc-300 py-4 px-4 sm:px-8 md:px-16 lg:px-20">
+        <section className="select-none relative w-full max-w-screen overflow-x-hidden border-y border-zinc-300 py-4 px-4 sm:px-8 md:px-16 lg:px-20">
           {/* Primary scrolling row */}
           <div className="marquee flex py-6 whitespace-nowrap font-serif">
             {items.map((item, index) => (
